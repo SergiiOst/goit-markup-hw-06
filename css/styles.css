@@ -220,7 +220,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg-mob.jpg);
   padding-top: 72px;
   padding-bottom: 72px;
   background-size: cover;
@@ -229,23 +229,52 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/Dark-bg-mob-2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tab.jpg);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab-2x.jpg);
+    }
   }
 }
 @media screen and (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x.jpg);
   }
+}
 }
 
 
@@ -398,7 +427,7 @@ img {
   text-align: center;
 
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .features-list-title {
     text-align: left;
   }
@@ -633,8 +662,7 @@ img {
 }
 @media screen and (min-width: 1158px){
   .footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
 }
 .footer-container {
@@ -1106,7 +1134,6 @@ letter-spacing: 0.4px;
 .mobile-social-list {
   display: flex;
   gap: 40px;
-  justify-content: center;
 }
 .mobile-social-item{
   width: 40px;
